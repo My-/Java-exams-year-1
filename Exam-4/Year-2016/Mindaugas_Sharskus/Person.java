@@ -11,9 +11,9 @@ public class Person{
   /**
   * Constructor to create Person object
   *
-  * @ param firstName - Person first name.
-  * @ param lastName - Person last name.
-  * @ param dob - Persons date of birth (yymmdd)
+  * @param firstName - Person first name.
+  * @param lastName - Person last name.
+  * @param dob - Persons date of birth (yymmdd)
   */
   public Person(String firstName, String lastName, int dob){
     this.firstName = firstName;
@@ -29,11 +29,11 @@ public class Person{
   *     dob = 0
   */
   public Person(){
-    this("noFirst", "noLast", 0);
+    this("noName", "noSurname", 999999);
   }
 
   //  Setters
-  public void setPerson(String firstName, String lastName, int dob){
+    public void setPerson(String firstName, String lastName, int dob){
     this.firstName = firstName;
     this.lastName = lastName;
     this.dob = dob;
@@ -67,6 +67,6 @@ public class Person{
   // Other
   @Override
   public String toString(){
-    return "Person: "+ this.firstName +" "+ this.lastName;
+    return "Person: "+ this.firstName +" "+ this.lastName +" "+ this.dob;
   }
 }
