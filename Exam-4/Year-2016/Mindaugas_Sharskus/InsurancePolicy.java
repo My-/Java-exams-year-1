@@ -2,86 +2,94 @@
 
 public class InsurancePolicy{
   //  Fields
-  private int policyNo;
-  private double premium;
-  private Person policyName;
-  private int commenseDate;
-  private boolean alive;
+  private int insPolicyNo;
+  private double insPremium;
+  private Person insPolicyName;
+  private int insCommenceDate;
+  private boolean insAlive;
 
   //  Constructors
-  public InsurancePolicy(int policyNo, int commenseDate, double premium,
-          Person policyName){
-      
-    this.policyNo = policyNo;
-    this.premium = premium;
-    this.policyName = policyName;
-    this.commenseDate = commenseDate;
-    this.alive = true;
+  public InsurancePolicy(int insPolicyNo, int insCommenceDate, double insPremium, boolean alive,
+                         String firstName, String lastName){
+
+      setInsurancePolicy(insPolicyNo, insCommenceDate, insPremium, alive);
+      setInsPolicyName(firstName, lastName);
   }
 
-  public InsurancePolicy(){
-    this(0, 0, .0, new Person());
+  public InsurancePolicy(int insPolicyNo, int insCommenceDate, double insPremium, boolean alive){
+      setInsurancePolicy(insPolicyNo, insCommenceDate, insPremium, alive);
+      insPolicyName = new Person();
   }
-  
+
   // Getters
 
-    public int getPolicyNo() {
-        return policyNo;
+    public void setInsurancePolicy(int insPolicyNo, int insCommenceDate, double insPremium, boolean alive){
+        setInsPolicyNo(insPolicyNo);
+        setInsCommenceDate(insCommenceDate);
+        setInsPremium(insPremium);
+        setInsAlive(alive);
+
+
+    }
+    public int getInsPolicyNo() {
+        return insPolicyNo;
     }
 
-    public double getPremium() {
-        return premium;
+    public double getInsPremium() {
+        return insPremium;
     }
 
-    public Person getPolicyName() {
-        return policyName;
+    public Person getInsPolicyName() {
+        return insPolicyName;
     }
 
-    public int getCommenseDate() {
-        return commenseDate;
+    public int getCommenceDate() {
+        return insCommenceDate;
     }
 
-    public boolean isAlive() {
-        return alive;
-    }
-    
-    // Setters
-    public void setInsurancePolicy(int policyNo, int commenseDate, double premium, Person policyName, boolean alive){
-        this.policyNo = policyNo;
-        this.commenseDate = commenseDate;
-        this.premium = premium;
-        this.policyName = policyName;
-        this.alive = alive;
-    }
-    
-    public void setPolicyNo(int policyNo) {
-        this.policyNo = policyNo;
+    public boolean isInsAlive() {
+        return insAlive;
     }
 
-    public void setPremium(double premium) {
-        this.premium = premium;
+
+    public void setInsPolicyNo(int insPolicyNo) {
+        this.insPolicyNo = insPolicyNo;
     }
-    
+
+    public void setInsPremium(double insPremium) {
+        this.insPremium = insPremium;
+    }
+
     public void setPremium(int premium) {
-        this.premium += this.premium * premium * 0.01;
+        this.insPremium += this.insPremium * premium * 0.01;
     }
 
-    public void setPolicyName(Person policyName) {
-        this.policyName = policyName;
+    public void setInsPolicyName(String firstName, String lastName) {
+        insPolicyName = new Person(firstName, lastName);
     }
 
-    public void setCommenseDate(int commenseDate) {
-        this.commenseDate = commenseDate;
+    public void setInsCommenceDate(int insCommenceDate) {
+        this.insCommenceDate = insCommenceDate;
     }
 
-    public void setAlive(boolean alive) {
-        this.alive = alive;
+    public void setInsAlive(boolean insAlive) {
+        this.insAlive = insAlive;
     }
 
     @Override
     public String toString() {
-        return "InsurancePolicy{" + "policyNo=" + policyNo + ", premium=" + premium + ", policyName=" + policyName + ", commenseDate=" + commenseDate + ", alive=" + alive + '}';
+        //return "InsurancePolicy{" + "insPolicyNo=" + insPolicyNo + ", insPremium=" + insPremium + ", insPolicyName=" + insPolicyName + ", insCommenceDate=" + insCommenceDate + ", insAlive=" + insAlive + '}';
+        char alive = 'F';
+
+		if (isInsAlive()) {
+			alive = 'T';
+		}
+
+		String s = String.format("%5d %6d %7.2f %1c %-15s ", getInsPolicyNo(), getCommenceDate(), getInsPremium(),
+				alive, getInsPolicyName());
+
+		return s;
     }
-  
-    
+
+
 }
