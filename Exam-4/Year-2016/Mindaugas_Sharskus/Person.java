@@ -5,38 +5,26 @@ public class Person{
   //  Fields
   private String firstName;
   private String lastName;
-  private int dob;  //yymmdd
+  private int dateOfBirth;  //yymmdd
 
   //  Constructors
-  /**
-  * Constructor to create Person object
-  *
-  * @param firstName - Person first name.
-  * @param lastName - Person last name.
-  * @param dob - Persons date of birth (yymmdd)
-  */
-  public Person(String firstName, String lastName, int dob){
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = dob;
+  public Person(String firstName, String lastName, int dateOfBirth){
+    setPerson(firstName, lastName, dateOfBirth);
+  }
+  public Person(String firstName, String lastName){
+    setPerson(firstName, lastName, 999999);
   }
 
-  /**
-  * Default constructor to create Person object
-  * This constructor creates object:
-  *     firstName = ""
-  *     lastName = ""
-  *     dob = 0
-  */
   public Person(){
-    this("noName", "noSurname", 999999);
+    setPerson("noName", "noSurname", 999999); // Gerry style
+    //this("noName", "noSurname", 999999);
   }
 
   //  Setters
     public void setPerson(String firstName, String lastName, int dob){
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.dob = dob;
+      setFirstName(firstName);
+      setLastName(lastName);
+      setDateOfBirth(dob);
   }
 
   public void setFirstName(String firstName){
@@ -47,8 +35,8 @@ public class Person{
     this.lastName = lastName;
   }
 
-  public void setDateOfBirth(int yymmdd){
-    this.dob = yymmdd;
+  public void setDateOfBirth(int dob){
+    this.dateOfBirth = dob;
   }
 
   //  Getters
@@ -61,12 +49,14 @@ public class Person{
   }
 
   public int getDateOfBirth(){
-    return this.dob;
+    return this.dateOfBirth;
   }
 
   // Other
   @Override
   public String toString(){
-    return "Person: "+ this.firstName +" "+ this.lastName +" "+ this.dob;
+    //return "Person: "+ this.firstName +" "+ this.lastName +" "+ this.dateOfBirth;
+    String s = String.format("%-14s ", getFirstName() + " " + getLastName());
+	return s;
   }
 }
