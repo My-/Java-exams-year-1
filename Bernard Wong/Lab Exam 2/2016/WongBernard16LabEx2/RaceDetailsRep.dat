@@ -1,0 +1,24 @@
+Bernard Wong - Lab Exam 2 (December 2016)
+ Id   Competitor   Club     Type  EB   R1     R2     R3     R4        Avg   Cost
+==================================================================================
+ 101 Gerry Agnew  Galway   Sport  Y    95.5   98.6   97.4   98.1     97.4  90.00
+ 102 Jim White    Ennis    Sport  y   101.5  108.6  102.4  106.5    104.8  90.00
+ 103 Joe Lee      Galway   Mini   n    67.2   78.6   67.9   72.1     71.5  80.00
+ 105 Sam Brown    Ennis    Full   n   142.3  148.2  150.1  146.5    146.8 120.00
+ 107 Liam Malley  Sligo    Mini   N    70.2   75.5   78.3   74.1     74.5  80.00
+ 108 Gerry Lyons  Galway   Mini   y    72.6   76.9   80.4   73.5     75.9  72.00
+ 109 Andy Ryan    Westport Full   y   132.5  136.8  140.8  141.2    137.8 108.00
+ 110 John Giles   Ennis    Full   Y   141.1  151.6  155.3  145.9    148.5 108.00
+ 112 Tim Hayes    Westport Full   n   155.3  159.6  161.8  158.4    158.8 120.00
+ 113 Eric Green   Sligo    Mini   y    72.6   76.9   80.4   73.5     75.9  72.00
+
+Competitor Counts:
+
+Competing:  10    Not Competing:   3
+Clubs:  Galway:  3   Ennis: 3   Westport: 2   Sligo: 2
+Mini Race: 4   Sport Race: 2   Full Race: 4
+
+The first competitor over the line was Lee, Joe in the Mini race in 67.2 minutes.
+The last competitor over the line was Hayes, Tim in the Full race in 161.8 minutes.
+
+2 competitors had an overall average in the Mini race of less than 75 minutes.

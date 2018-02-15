@@ -1,0 +1,25 @@
+Mismatched Rejected Tx Report
+=============================
+Emp   Tx      Tx
+ Id Code  Amount
+================
+100 comm     333 - Commission only for Sales 
+888 comm     333 - Commission only for Sales 
+112  new       1 - Mismatched Employee Id 
+222  hol      10 -           Invalid Tx Code 
+223 dept       1 - Mismatched Employee Id 
+334  sal      -1 - Mismatched Employee Id 
+444 comm       1 - Commission only for Sales 
+444  xxx       1 -           Invalid Tx Code 
+555 gone       1 -           Invalid Tx Code 
+778 nite       1 - Mismatched Employee Id 
+778  new       2 - Mismatched Employee Id 
+778   km       1 - Mismatched Employee Id 
+778 comm       1 - Mismatched Employee Id 
+778 otim       1 - Mismatched Employee Id 
+778 hols       1 - Mismatched Employee Id 
+778  sal       1 - Mismatched Employee Id 
+889  new     100 - Mismatched Employee Id 
+997   km       1 - Mismatched Employee Id 
+999  xxx       1 -           Invalid Tx Code 
+999  new       1 -           Invalid Tx Code 

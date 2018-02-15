@@ -1,0 +1,9 @@
+Spain        0   0   0   0   0   0    0    0 
+Sweden       0   0   1   0   0   1    2    1 
+France       0   1   0   0   1   0    6    2 
+Britain      0   1   1   0   1   1    8    3 
+USA          1   0   0   1   0   0   10    4 
+Germany      1   0   1   1   0   1   12    5 
+Norway       1   1   0   1   1   0   16    6 
+Ireland      1   1   1   1   1   1   18    7 
+EOF

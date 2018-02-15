@@ -1,0 +1,14 @@
+112 X  it   05 1000 0000 040 15 2500 aaaa aaaaaa
+223 x  dist 00 0000 0000 005 10 3500 bbbb bbbbbb
+334 x  IT   02 0010 0000 300 20 4500 cccc cccccc
+100 A admn     34     35      3     40      5   6000  Geraldo Agnewy
+111 A sale     43   2033   1333     33     25   1000    Bart Simpson
+222 a admn      0      0      0     10     35   3000       Porky Pig
+333 A sale      1    500   1234      0     15   8110     Tweety Bird
+444 a admn      1      1      0      1     26   5001      Betty Boop
+555 A dist      0      0      0      0     30   6000      Daffy Duck
+666 a sale      7   9000    999      0     28   5000      Bugs Bunny
+777 A admn      0      0      0     50     26   4500     dddd dddddd
+888 A Dist     35   1267      0     99     24   4000    Pink Panther
+999 a dist      1      0      0    123     22   3100     Wile Cayote
+99999
