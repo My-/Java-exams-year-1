@@ -1,0 +1,25 @@
+Bernard Wong - Lab Exam 2 (December 2015)
+
+ Id  Contact Name  Org Name     Plan       Allowed   Wk1  Wk2   Wk3  Sum   Cost
+================================================================================
+2000 Agnew,Gerry   ACME         Business       10  11    58.00
+2001 Smith,Lisa    Steam        Essential       3   3    15.00
+2002 Jones,Gerry   Valve        Essential       3   5    31.00
+2003 Johnson,Jim   EA           Business       10  10    50.00
+2005 Smith,Sharon  Chamber      Standard        5   6    33.00
+2006 Smyth,Sheena  UpSales      Business       10   7    50.00
+2007 Homes,Tim     Insight      Business       10   9    50.00
+2008 Smith,Steve   SalesExec    Standard        5   6    33.00
+2010 Trim,Andrew   Audible      Profession      8   9    43.00
+2011 Walsh,Alan    iStore       Business       10   8    50.00
+2012 Brynes,Linda  iStock       Profession      8   8    35.00
+2013 Burns,Liam    SalesTech    Standard        5   7    41.00
+
+Active Customers:  12   Free Trail:   2    Essential:   2
+        Standard:   3 Proffesional:   2    Business:    5
+
+Lowest Helpdesk Cost:  15.00 used by: Steam
+
+Highest Helpdesk Cost: 58.00 used by:  ACME
+
+5 Helpdesk Costs above the limit >=  50.00 Output

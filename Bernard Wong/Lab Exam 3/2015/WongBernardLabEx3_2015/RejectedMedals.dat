@@ -1,0 +1,12 @@
+Mismatched Rejectd Tx Report
+============================
+Country    Event    Gender Medal
+=================================
+xIreland   bad-1      M    bronze  - Missing Country Name
+IRE        bad-2      F    Silver  - Missing Country Name
+Irelan     bad-3      F    gOlD    - Missing Country Name
+Norw       bad-4      m    bronze  - Missing Country Name
+Norwa      bad-5      m    bronze  - Missing Country Name
+Norway     bad-6      m    bronzy  - Medal not Gold, Silver or Bronze
+Norway     bad-7      m    silvre  - Medal not Gold, Silver or Bronze
+Norway     bad-8      m    golly   - Medal not Gold, Silver or Bronze

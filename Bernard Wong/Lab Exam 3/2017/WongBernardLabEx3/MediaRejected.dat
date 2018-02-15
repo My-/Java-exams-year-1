@@ -1,0 +1,11 @@
+Mismatched Rejected Tx Report
+=============================
+Cust   Tx  Sub      Tx
+ Num Code Code  Amount
+================================================
+112    c  fix   99.99 - Mismatched Employee Id 
+223    d   ph    0.00 - Mismatched Employee Id 
+334    D   in    0.00 - Mismatched Employee Id 
+666    X   tv    1.00 -        Invalid Tx code: X 
+666    A   yy    1.00 -   Invalid Tx sub code: yy 
+666    A  tvy    1.00 -  Invalid Tx sub code: tvy 
