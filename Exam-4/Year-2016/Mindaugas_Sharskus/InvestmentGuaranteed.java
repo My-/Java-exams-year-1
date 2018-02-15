@@ -5,8 +5,8 @@
 
 public class InvestmentGuaranteed extends InsurancePolicy{
   // Fields
-  private double lumpSum;
-  private int matureDate;
+  private double igLumpSum;
+  private int igMatureDate;
 
   // Constructers
   public InvestmentGuaranteed(double lumpSum, int matureDate,
@@ -14,55 +14,55 @@ public class InvestmentGuaranteed extends InsurancePolicy{
                           Person policyName, boolean isAlive){
     super();
     super.setInsurancePolicy(policyNo, commenseDate, premium, policyName, isAlive);
-    this.lumpSum = lumpSum;
-    this.matureDate = matureDate;
+    this.igLumpSum = lumpSum;
+    this.igMatureDate = matureDate;
 
   }
 
   public InvestmentGuaranteed(){
     super();
-    this.lumpSum = .0;
-    this.matureDate = 0;
+    this.igLumpSum = .0;
+    this.igMatureDate = 0;
 
   }
 
   // Setters
   public void setInvestmentGuaranteed(double lumpSum, int matureDate,
-              int policyNo, int commenseDate, double premium,
+              int policyNo, int commenceDate, double premium,
                           Person policyName, boolean isAlive){
 
-    this.lumpSum = lumpSum;
-    this.matureDate = matureDate;
-    super.setInsurancePolicy(policyNo, commenseDate, premium, policyName, isAlive);
+    setIgLumpSum(lumpSum);
+    setIgMatureDate(matureDate);
+    super(policyNo, commenceDate, premium, policyName, isAlive);
 
   }
 
-    public void setLumpSum(double lumpSum) {
-        this.lumpSum = lumpSum;
+    public void setIgLumpSum(double igLumpSum) {
+        this.igLumpSum = igLumpSum;
     }
 
     public void setLumpSum(int lumpSum){
-        this.lumpSum -= lumpSum;
+        this.igLumpSum -= lumpSum;
     }
 
-    public void setMatureDate(int matureDate) {
-        this.matureDate = matureDate;
+    public void setIgMatureDate(int igMatureDate) {
+        this.igMatureDate = igMatureDate;
     }
 
     //Getters
 
     public double getLumSum(){
-         return lumpSum;
+         return igLumpSum;
     }
 
-    public int getMatureDate(){
-         return matureDate;
+    public int getIgMatureDate(){
+         return igMatureDate;
     }
 
     @Override
     public String toString(){
 
-          String s = super.toString() + String.format("Lum: %9.2f Mat:%-15s", getLumpSum(), getMatureDate());
+          String s = super.toString() + String.format("Lum: %9.2f Mat:%-15s", getLumpSum(), getIgMatureDate());
           return s;
     }
 
