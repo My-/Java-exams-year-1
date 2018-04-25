@@ -9,16 +9,16 @@ public class AirTaxi extends Helicopter{
 //===================================================================
     public AirTaxi()
     {
-		super();
-		setAirTaxi(0);
+        super();
+        setAirTaxi(0);
     }
 //===================================================================
     public AirTaxi(int id, String makeModel, boolean allWeather, double range, int pilotId, String pilotName, int pilotHours, int maxPass)
-	{
-		super.setHelicopter(id, makeModel, allWeather, range);
-		super.setPilot(pilotId, pilotName, pilotHours);
-		setAirTaxi(maxPass);
-	}
+    {
+        super.setHelicopter(id, makeModel, allWeather, range);
+        super.setPilot(pilotId, pilotName, pilotHours);
+        setAirTaxi(maxPass);
+    }
 //===================================================================
     public void setAirTaxi(int maxPass)
     {
@@ -39,7 +39,7 @@ public class AirTaxi extends Helicopter{
 //===================================================================
     public String toString()
     {
-		return super.toString() + " Pass: " + getMaxPassengers();
-	}
+        return super.toString() + " Pass: " + getMaxPassengers();
+    }
 //===================================================================
 } // AirTaxi

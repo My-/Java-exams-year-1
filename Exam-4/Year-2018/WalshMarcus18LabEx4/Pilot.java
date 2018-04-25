@@ -11,12 +11,12 @@ public class Pilot {
 //===================================================================
     public Pilot()
     {
-		setPilot(0, "noPilot", 0);
+        setPilot(0, "noPilot", 0);
     }
 //===================================================================
     public Pilot(int id, String name, int hours)
     {
-		setPilot(id, name, hours);
+        setPilot(id, name, hours);
     }
 //===================================================================
     public void setPilot(int id, String name, int hours)
@@ -60,7 +60,7 @@ public class Pilot {
 //===================================================================
     public String toString()
     {
-		return String.format("%3d %-8s %5d", getPilotId(), getPilotName(), getPilotHours());
-	}
+        return String.format("%3d %-8s %5d", getPilotId(), getPilotName(), getPilotHours());
+    }
 //===================================================================
 } // Pilot

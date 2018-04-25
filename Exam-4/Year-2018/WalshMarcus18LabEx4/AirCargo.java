@@ -11,15 +11,15 @@ public class AirCargo extends Helicopter {
 //===================================================================
     public AirCargo()
     {
-		super();
-		setAirCargo(DEFAULT_CAPACITY, DEFAULT_WEIGHT);
+        super();
+        setAirCargo(DEFAULT_CAPACITY, DEFAULT_WEIGHT);
     }
 //===================================================================
     public AirCargo(int id, String makeModel, boolean allWeather, double range, int pilotId, String pilotName, int pilotHours, double capacity, int weight)
-	{
-		super(id, makeModel, allWeather, range, pilotId, pilotName, pilotHours);
-		setAirCargo(capacity, weight);
-	}
+    {
+        super(id, makeModel, allWeather, range, pilotId, pilotName, pilotHours);
+        setAirCargo(capacity, weight);
+    }
 //===================================================================
     public void setAirCargo(double capacity, int weight)
     {
@@ -51,14 +51,14 @@ public class AirCargo extends Helicopter {
 //===================================================================
     public String toString()
     {
-		return super.toString() + String.format(" Cap: %.2f  Wght: %d", getMaxCapacity(), getMaxWeight());
-	}
+        return super.toString() + String.format(" Cap: %.2f  Wght: %d", getMaxCapacity(), getMaxWeight());
+    }
 //===================================================================
-	public AirCargo exportAirCargo()
-	{
-		Pilot p1 = getPilot(1);
-		AirCargo a1 = new AirCargo(super.getHelicopterId(), super.getHeliMakeModel(), super.getHeliAllWeather(), super.getHeliRange(), p1.getPilotId(), p1.getPilotName(), p1.getPilotHours(), getMaxCapacity(),  getMaxWeight());
-		return a1;
-	}
+    public AirCargo exportAirCargo()
+    {
+        Pilot p1 = getPilot(1);
+        AirCargo a1 = new AirCargo(super.getHelicopterId(), super.getHeliMakeModel(), super.getHeliAllWeather(), super.getHeliRange(), p1.getPilotId(), p1.getPilotName(), p1.getPilotHours(), getMaxCapacity(),  getMaxWeight());
+        return a1;
+    }
 //===================================================================
 } // AirCargo

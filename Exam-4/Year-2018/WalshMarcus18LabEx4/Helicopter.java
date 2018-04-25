@@ -13,20 +13,20 @@ public class Helicopter {
 //===================================================================
     public Helicopter()
     {
-		setHelicopter(0, "noMakeModel", false, 0.00);
-		pilot = new Pilot();
+        setHelicopter(0, "noMakeModel", false, 0.00);
+        pilot = new Pilot();
     }
 //===================================================================
     public Helicopter(int id, String makeModel, boolean allWeather, double range)
     {
-		setHelicopter(id, makeModel, allWeather, range);
-		pilot = new Pilot();
+        setHelicopter(id, makeModel, allWeather, range);
+        pilot = new Pilot();
     }
 //===================================================================
     public Helicopter(int id, String makeModel, boolean allWeather, double range, int pilotId, String pilotName, int pilotHours)
     {
-		setHelicopter(id, makeModel, allWeather, range);
-		pilot = new Pilot(pilotId, pilotName, pilotHours);
+        setHelicopter(id, makeModel, allWeather, range);
+        pilot = new Pilot(pilotId, pilotName, pilotHours);
     }
 //===================================================================
     public void setHelicopter(int id, String makeModel, boolean allWeather, double range)
@@ -76,7 +76,7 @@ public class Helicopter {
 //===================================================================
     public void setHeliRange(int h)
     {
-		double newRange = getHeliRange() + (getHeliRange()* (h/100.0));
+        double newRange = getHeliRange() + (getHeliRange()* (h/100.0));
         setHeliRange(newRange);
     }
 //===================================================================
@@ -87,31 +87,31 @@ public class Helicopter {
 //===================================================================
     public void setPilot(int id, String name, int hours)
     {
-		pilot.setPilot(id, name, hours);
-	}
+        pilot.setPilot(id, name, hours);
+    }
 //===================================================================
     public String getPilot()
     {
-		return pilot.toString();
-	}
+        return pilot.toString();
+    }
 //===================================================================
     public Pilot getPilot(int i)
     {
-		return pilot;
-	}
+        return pilot;
+    }
 //===================================================================
     public String toString()
     {
-		char aw;
-		if (getHeliAllWeather())
-		{
-			aw = 'T';
-		}
-		else
-		{
-			aw = 'F';
-		}
-		return String.format("%4d %11s %2s %9.2f  %s", getHelicopterId(), getHeliMakeModel(), aw, getHeliRange(), pilot.toString());
-	}
+        char aw;
+        if (getHeliAllWeather())
+        {
+            aw = 'T';
+        }
+        else
+        {
+            aw = 'F';
+        }
+        return String.format("%4d %11s %2s %9.2f  %s", getHelicopterId(), getHeliMakeModel(), aw, getHeliRange(), pilot.toString());
+    }
 //===================================================================
 } // Helicopter
